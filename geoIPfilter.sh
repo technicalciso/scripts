@@ -45,4 +45,4 @@ country=$($GEOIPLOOKUP $1 | $CUT -d":" -f 2 | $CUT -d"," -f1)
 
 #if we are here, time to ban!
 $LOGGER geoIPfilter.sh: Banned $1 from $country
-$FAIL2BANCLIENT set $jail banip $1 > /tmp/log
+$FAIL2BANCLIENT set $jail banip $1 
