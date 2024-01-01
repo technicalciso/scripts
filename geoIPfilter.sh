@@ -14,7 +14,6 @@
 #       add a flag for testing that doesn't actually perform the ban.  in the meantime use a short jailtime (e.g. 30 seconds or less) to test
 #       more flexible logging options (allowed and banned, just banned, none, etc.)
 #
-#
 # NOTES (largely unimportant now that the script uses fail2ban, but could be useful if rewriting to use aclexec on debian based systems):
 #       when called by tcp wrappers, script exit 0 will allow access, anything else will deny
 #       if IP isn't found (e.g. 127.0.0.1 or 10.0.0.1) then script exits 0 to allow
